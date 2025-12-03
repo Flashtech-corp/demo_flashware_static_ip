@@ -283,13 +283,13 @@ FSP Configuration
     Print info messages: Disable
     Byte order of the target MCU: pdFREERTOS_LITTLE_ENDIAN 
     IP/TCP/UDP checksums: Enable 
-    Receive Block Time: 10000
-    Send Block Time: 10000
+    Receive Block Time: 2000
+    Send Block Time: 2000
     DNS caching: Enable 
     DNS Request Attempts: 2
     IP stack task priority: configMAX_PRIORITIES - 2
     Stack size in words (not bytes): configMINIMAL_STACK_SIZE * 5
-    Network Events call vApplicationIPNetworkEventHook: Enable 
+    Network Events call vApplicationIPNetworkEventHook: Disable
     Max UDP send block time: 15000 / portTICK_PERIOD_MS
     Use DHCP: Disable
     DHCP Register Hostname: Disable
@@ -310,7 +310,7 @@ FSP Configuration
     Maximum number of bytes the payload of a network frame can contain: 1500
     Basic DNS client or resolver: Enable 
     Reply to incoming ICMP echo (ping) requests: Enable 
-    FreeRTOS_SendPingRequest() is available: Disable
+    FreeRTOS_SendPingRequest() is available: Enable 
     FreeRTOS_select() (and associated) API function is available: Disable
     Filter out non Ethernet II frames.: Enable 
     Responsibility of the Ethernet interface to filter out packets: Disable
@@ -342,7 +342,7 @@ FSP Configuration
     DP83620 Target: Disabled
     ICS1894 Target: Disabled
     User Own Target: Disabled
-    Reference Clock: Default
+    Reference Clock: Enabled
     Automatic PHY-LSI Initialization: Enabled
     
   Module "Ethernet PHY-LSI"
@@ -352,7 +352,7 @@ FSP Configuration
     DP83620 Target: Disabled
     ICS1894 Target: Disabled
     User Own Target: Disabled
-    Reference Clock: Default
+    Reference Clock: Enabled
     Automatic PHY-LSI Initialization: Enabled
     
   FreeRTOS
@@ -390,7 +390,7 @@ FSP Configuration
     Memory Allocation: Clear Memory on Free: Disabled
     Memory Allocation: Support Static Allocation: Enabled
     Memory Allocation: Support Dynamic Allocation: Enabled
-    Memory Allocation: Total Heap Size: 8192
+    Memory Allocation: Total Heap Size: 0x8000
     Memory Allocation: Application Allocated Heap: Disabled
     Stats: Generate Run Time Stats: Disabled
     Timers: Use Timers: Enabled
@@ -436,7 +436,7 @@ FSP Configuration
   Thread "New Thread"
     Symbol: new_thread0
     Name: New Thread
-    Stack size (bytes): 1024
+    Stack size (bytes): 4096
     Priority: 1
     Thread Context: NULL
     Memory Allocation: Static
@@ -460,8 +460,8 @@ FSP Configuration
           Filters: Multicast Mode: Enable
           Filters: Promiscuous Mode: Disable
           Filters: Broadcast filter: 0
-          Buffers: Number of TX buffer: 1
-          Buffers: Number of RX buffer: 1
+          Buffers: Number of TX buffer: 4
+          Buffers: Number of RX buffer: 4
           Buffers: Allocate RX buffer: Enable
           Buffers: Buffer size: 1514
           Buffers: Padding size: Disable

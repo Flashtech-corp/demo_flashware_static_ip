@@ -101,5 +101,6 @@ ra/fsp/src/r_ioport \
 ra/fsp/src/rm_freertos_plus_tcp \
 ra/fsp/src/rm_freertos_port \
 ra_gen \
+src/SEGGER_RTT \
 src \
 

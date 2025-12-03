@@ -69,8 +69,8 @@ extern "C" {
  * performed, for example FreeRTOS_send() and FreeRTOS_recv().  The timeouts can be
  * set per socket, using setsockopt().  If not set, the times below will be
  * used as defaults. */
-#define ipconfigSOCK_DEFAULT_RECEIVE_BLOCK_TIME    (10000)
-#define ipconfigSOCK_DEFAULT_SEND_BLOCK_TIME       (10000)
+#define ipconfigSOCK_DEFAULT_RECEIVE_BLOCK_TIME    (2000)
+#define ipconfigSOCK_DEFAULT_SEND_BLOCK_TIME       (2000)
 
 /* Include support for DNS caching.  For TCP, having a small DNS cache is very
  * useful.  When a cache is present, ipconfigDNS_REQUEST_ATTEMPTS can be kept low
@@ -104,7 +104,7 @@ extern "C" {
  * is not set to 1 then the network event hook will never be called. See:
  * http://www.FreeRTOS.org/FreeRTOS-Plus/FreeRTOS_Plus_UDP/API/vApplicationIPNetworkEventHook.shtml.
  */
-#define ipconfigUSE_NETWORK_EVENT_HOOK           1
+#define ipconfigUSE_NETWORK_EVENT_HOOK           0
 
 /* Sockets have a send block time attribute.  If FreeRTOS_sendto() is called but
  * a network buffer cannot be obtained then the calling task is held in the Blocked
@@ -234,7 +234,7 @@ extern "C" {
 
 /* If ipconfigSUPPORT_OUTGOING_PINGS is set to 1 then the
  * FreeRTOS_SendPingRequest() API function is available. */
-#define ipconfigSUPPORT_OUTGOING_PINGS                 0
+#define ipconfigSUPPORT_OUTGOING_PINGS                 1
 
 /* If ipconfigSUPPORT_SELECT_FUNCTION is set to 1 then the FreeRTOS_select()
  * (and associated) API function is available. */

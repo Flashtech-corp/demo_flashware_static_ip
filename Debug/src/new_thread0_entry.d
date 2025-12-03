@@ -98,7 +98,9 @@ src/new_thread0_entry.o: ..\src\new_thread0_entry.cpp \
   D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra\fsp\inc\instances\r_ioport.h \
   D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra\fsp\inc\api\r_ioport_api.h \
   D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra_cfg\fsp_cfg\r_ioport_cfg.h \
-  D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra_cfg\fsp_cfg\bsp\bsp_pin_cfg.h
+  D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra_cfg\fsp_cfg\bsp\bsp_pin_cfg.h \
+  ..\src\common_utils.h ..\src\SEGGER_RTT\SEGGER_RTT.h \
+  ..\src\SEGGER_RTT\SEGGER_RTT_Conf.h ..\src\usr_app.h
 D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra_gen\new_thread0.h:
 D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra\fsp\inc\api\bsp_api.h:
 D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra\fsp\inc\api\fsp_common_api.h:
@@ -199,3 +201,7 @@ D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra\fsp\inc\in
 D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra\fsp\inc\api\r_ioport_api.h:
 D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra_cfg\fsp_cfg\r_ioport_cfg.h:
 D:\Users\ferdi.kurnaz\e2_studio\workspace\demo_flashware_static_ip\ra_cfg\fsp_cfg\bsp\bsp_pin_cfg.h:
+..\src\common_utils.h:
+..\src\SEGGER_RTT\SEGGER_RTT.h:
+..\src\SEGGER_RTT\SEGGER_RTT_Conf.h:
+..\src\usr_app.h:
